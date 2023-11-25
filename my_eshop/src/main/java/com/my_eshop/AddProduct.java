@@ -38,7 +38,7 @@ public class AddProduct extends HttpServlet{
 		
 		String url = "jdbc:postgresql://localhost:5432/postgres";
 		String query = "INSERT INTO products(product_name ,price ,description ,picture_file) VALUES (?,?,?,?) ";
-		Connection connection = DriverManager.getConnection(url,"postgres","6972419550n");
+		Connection connection = DriverManager.getConnection(url,"postgres","**********");
 		PreparedStatement statement = connection.prepareStatement(query);
 			
 		Part part = req.getPart("file");
