@@ -30,7 +30,7 @@ public class ShopAdmin extends HttpServlet{
 		String url = "jdbc:postgresql://localhost:5432/postgres";
 		try {
 			Class.forName("org.postgresql.Driver");
-			Connection conn = DriverManager.getConnection(url,"postgres","6972419550n");
+			Connection conn = DriverManager.getConnection(url,"postgres","*********");
 			PreparedStatement statement = conn.prepareStatement(query);
 			ResultSet rs = statement.executeQuery();
 			
