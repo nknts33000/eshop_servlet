@@ -38,7 +38,7 @@ public class Login extends HttpServlet {
 				
 				
 				Class.forName("org.postgresql.Driver");
-				Connection conn = DriverManager.getConnection(url,"postgres","6972419550n");
+				Connection conn = DriverManager.getConnection(url,"postgres","**********");
 				PreparedStatement statement = conn.prepareStatement(query);
 				statement.setString(1,username);
 				ResultSet rs = statement.executeQuery();//connection and query execution to obtain the row
