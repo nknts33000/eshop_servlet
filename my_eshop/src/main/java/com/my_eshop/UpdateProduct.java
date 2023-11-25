@@ -28,7 +28,7 @@ public class UpdateProduct extends HttpServlet{
 		System.out.println(attribute);
 		String new_value = req.getParameter("new_value");
 		try {
-			Connection connection = DriverManager.getConnection(url,"postgres","6972419550n");
+			Connection connection = DriverManager.getConnection(url,"postgres","********");
 			
 			if (attribute.equals("product_name"))
 			{	
