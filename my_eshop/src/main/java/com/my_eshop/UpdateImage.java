@@ -44,7 +44,7 @@ public class UpdateImage extends HttpServlet{
 			int id = Integer.parseInt(req.getParameter("id"));
 		String url = "jdbc:postgresql://localhost:5432/postgres";
 		String query = "UPDATE products SET picture_file= ? WHERE product_id= ?";
-		Connection connection = DriverManager.getConnection(url,"postgres","6972419550n");
+		Connection connection = DriverManager.getConnection(url,"postgres","**********");
 		PreparedStatement statement = connection.prepareStatement(query);
 		Part part = req.getPart("file");
 		String cd = part.getHeader("content-disposition");
