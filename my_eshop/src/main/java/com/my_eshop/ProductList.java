@@ -15,7 +15,7 @@ public class ProductList {
 		String query="SELECT * FROM products";
 		try {
 			Class.forName("org.postgresql.Driver");
-			Connection conn = DriverManager.getConnection(url,"postgres","6972419550n");
+			Connection conn = DriverManager.getConnection(url,"postgres","***********");
 			PreparedStatement statement = conn.prepareStatement(query);
 			ResultSet rs = statement.executeQuery();
 			
