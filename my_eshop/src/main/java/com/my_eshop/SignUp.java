@@ -71,7 +71,7 @@ public class SignUp extends HttpServlet {
 			else
 			{
 			Class.forName("org.postgresql.Driver");
-			Connection connection = DriverManager.getConnection(url,"postgres","6972419550n");
+			Connection connection = DriverManager.getConnection(url,"postgres","**********");
 			PreparedStatement statement = connection.prepareStatement(query);
 			statement.setString(1,username);
 			statement.setString(2,hash_password);
