@@ -45,13 +45,13 @@ public class Update extends HttpServlet
 	
 	try {
 		Class.forName("org.postgresql.Driver");
-		Connection conn = DriverManager.getConnection(url,"postgres","6972419550n");
+		Connection conn = DriverManager.getConnection(url,"postgres","************");
 		java.sql.Statement statement = conn.createStatement();
 		String query0 = "SELECT * FROM users WHERE username = '"+session.getAttribute("username")+"';";
 		String query1 = "UPDATE users SET username=? WHERE username='"+session.getAttribute("username")+"';";
 		String query2 = "UPDATE users SET hashpassword =? WHERE username='"+session.getAttribute("username")+"';";
 		String query3 = "UPDATE users SET email=? WHERE username='"+session.getAttribute("username")+"';";
-		Connection connection = DriverManager.getConnection(url,"postgres","6972419550n");
+		Connection connection = DriverManager.getConnection(url,"postgres","*********");
 		
 		
 	
